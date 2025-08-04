@@ -26,3 +26,21 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left; /* căn chữ bên trái */
 }
+
+#bg-video {
+  object-fit: cover;
+  object-position: center top; /* 👈 Giữ phần trên của video */
+}
+
+body {
+  background-image: url('samurai.jpg');
+  background-size: cover;
+  background-position: center right; /* 👈 Giữ samurai bên phải */
+  background-attachment: fixed; /* hiệu ứng cố định khi cuộn */
+}
+
+@media (max-width: 768px) {
+  #bg-video {
+    object-position: center right; /* tập trung vào nhân vật */
+  }
+}
