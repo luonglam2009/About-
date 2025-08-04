@@ -1,0 +1,28 @@
+/* Video nền toàn trang */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; 
+  object-fit: cover;
+}
+
+/* Nội dung */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px 0 50px 50px; /* đẩy sát bên trái */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85); 
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left; /* căn chữ bên trái */
+}
